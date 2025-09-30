@@ -15,5 +15,6 @@ public class waytoolongwords {
             System.out.println(n);
         }
     }
+    sc.close();
     }
 }
