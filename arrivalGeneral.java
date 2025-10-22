@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class arrivalGeneral {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         int[] heights = new int[n];
         
         for (int i = 0; i < n; i++) {
-            heights[i] = scanner.nextInt();
+            heights[i] = sc.nextInt();
         }
         
         int maxHeight = Integer.MIN_VALUE;
@@ -37,6 +37,6 @@ public class arrivalGeneral {
         }
         
         System.out.println(swaps);
-        scanner.close();
+        sc.close();
     }
 }
