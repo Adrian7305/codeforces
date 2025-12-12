@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class dislikeThrees {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        for(int i=0;i<num;i++){
+            int k = sc.nextInt();
+            int j=1;
+            int count = 0;
+            while(count!=k){
+                int r=j%10;
+                if(j%3==0 || r==3){
+                    j++;
+                    continue;
+                }
+                j++;
+                count++;
+            }
+            System.out.println(j-1);
+        }
+        sc.close();
+    }
+}
